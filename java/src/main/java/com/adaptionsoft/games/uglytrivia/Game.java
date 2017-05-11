@@ -67,7 +67,14 @@ public class Game {
 						+ "'s new location is " 
 						+ places[currentPlayer]);
 				System.out.println("The category is " + currentCategory());
-				askQuestion();
+				if (currentCategory() == "Pop")
+					System.out.println(popQuestions.removeFirst());
+				if (currentCategory() == "Science")
+					System.out.println(scienceQuestions.removeFirst());
+				if (currentCategory() == "Sports")
+					System.out.println(sportsQuestions.removeFirst());
+				if (currentCategory() == "Rock")
+					System.out.println(rockQuestions.removeFirst());
 			} else {
 				System.out.println(players.get(currentPlayer) + " is not getting out of the penalty box");
 				isGettingOutOfPenaltyBox = false;
@@ -82,22 +89,17 @@ public class Game {
 					+ "'s new location is " 
 					+ places[currentPlayer]);
 			System.out.println("The category is " + currentCategory());
-			askQuestion();
+			if (currentCategory() == "Pop")
+				System.out.println(popQuestions.removeFirst());
+			if (currentCategory() == "Science")
+				System.out.println(scienceQuestions.removeFirst());
+			if (currentCategory() == "Sports")
+				System.out.println(sportsQuestions.removeFirst());
+			if (currentCategory() == "Rock")
+				System.out.println(rockQuestions.removeFirst());
 		}
 		
 	}
-
-	private void askQuestion() {
-		if (currentCategory() == "Pop")
-			System.out.println(popQuestions.removeFirst());
-		if (currentCategory() == "Science")
-			System.out.println(scienceQuestions.removeFirst());
-		if (currentCategory() == "Sports")
-			System.out.println(sportsQuestions.removeFirst());
-		if (currentCategory() == "Rock")
-			System.out.println(rockQuestions.removeFirst());		
-	}
-	
 	
 	private String currentCategory() {
 		if (places[currentPlayer] == 0) return "Pop";
@@ -132,8 +134,6 @@ public class Game {
 				if (currentPlayer == players.size()) currentPlayer = 0;
 				return true;
 			}
-			
-			
 			
 		} else {
 		
