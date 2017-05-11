@@ -1,7 +1,22 @@
 Legacy Code Retreat code base
 ======
 
-Use this code base to run your own [Legacy Code Retreat](http://legacycoderetreat.jbrains.ca).
+### Setting Up 
 
-As of this writing, there isn't really a single place to get all the information you might want about Legacy Code Retreat. Search the web and ask your colleagues. Most importantly, don't panic! If you've been to Code Retreat even once, then you know most of what you need to run a Legacy Code Retreat. Give it a try!
+* `git clone https://github.com/lovelejess/trivia.git`
+* Install IntelliJ IDEA
+* Install Java JDK
+* Import your cloned project by selecting the option to import an existing project via your `pom.xml` file 
+* 
+
+
+### Run Your Tests
+* Right click on the `test/java` directory and click "Run 'All Tests'"
+
+
+
+Code borrowed from: [Legacy Code Retreat](https://github.com/jbrains/trivia)
+
+
+
 
